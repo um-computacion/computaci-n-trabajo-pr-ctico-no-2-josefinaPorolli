@@ -1,6 +1,11 @@
 import unittest
-from src.palindrome import is_palindrome
 
+# Para detectar el directorio src
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from src.palindrome import is_palindrome
 
 class TestPalindrome(unittest.TestCase):
     # Test para palindromo simple
